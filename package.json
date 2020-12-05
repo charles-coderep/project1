@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/charles-coderep/project1-rep/issues"
   },
-  "homepage": "https://github.com/charles-coderep/project1-rep#readme"
+  "homepage": "https://github.com/charles-coderep/project1-rep#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
 }
