@@ -1,17 +1,12 @@
 const gulp = require("gulp");
+const sass = require('gulp-sass');
+const browserSync = require('browser-sync').create();
+//compile scss into css
 
-/*
-function helloWorld(done){
-    console.log("hello world");
-    done();
-
-    
-}
-gulp.task(helloWorld);
-*/
-
-
-gulp.task('start', function (done){ //taskName, taskFunction - gulp looks for taskname and if there is only one argument it takes the name of the function and uses it as the name of the task
-    console.log("hello world");
-    done();
-})
+task('style', function() {
+    return gulp.src('src/scss/**/*.scss')
+    .pipe(sass().on('error',sass.logError))
+    .pipe(gulp.dest('src/css'))
+    .pipe(browserSync.stream());
+});
+exports.style = style;

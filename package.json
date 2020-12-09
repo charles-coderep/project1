@@ -9,15 +9,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/charles-coderep/project1-rep.git"
+    "url": "git+https://github.com/charles-coderep/project1.git"
   },
   "author": "charles hewett",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/charles-coderep/project1-rep/issues"
+    "url": "https://github.com/charles-coderep/project1/issues"
   },
-  "homepage": "https://github.com/charles-coderep/project1-rep#readme",
+  "homepage": "https://github.com/charles-coderep/project1#readme",
   "devDependencies": {
+    "browser-sync": "^2.26.13",
     "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.3"
   }
 }
