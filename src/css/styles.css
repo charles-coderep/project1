@@ -1,5 +1,9 @@
 html {
   font-size: 62.5%; }
 
+body {
+  background: #881b1b;
+  color: #fff; }
+
 h1 {
-  font-size: 1.6rem; }
+  font-size: 2rem; }

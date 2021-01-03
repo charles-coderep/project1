@@ -5,6 +5,11 @@ html {
    font-size: 62.5%; // if user default is 16px then font size is 10px. Still scalable and easy to calculate
 }
 
+body {
+    background: #881b1b;
+    color:#fff;
+}
+
 h1 {
-    font-size: 1.6rem; //16px
+    font-size: 2rem; //16px
 }
