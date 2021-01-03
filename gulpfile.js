@@ -12,7 +12,7 @@ function watch() {
     browserSync.init({
         server: {
            baseDir: "./src",
-           index: "/index.html"
+           index: "/index.html" // comment
         }
     });
     gulp.watch('src/scss/**/*.scss', style).on('change', browserSync.reload); // watch changes to scss, if any go to style task and convert to css
