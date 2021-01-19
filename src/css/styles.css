@@ -1,9 +1,143 @@
-html {
-  font-size: 62.5%; }
+/* css reset start*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*css reset end*/
+
+
+html{
+  font-size: 18px;
+}
+
+main {
+  padding:2rem;
+}
 
 body {
   background: #3626c5;
-  color: #fff; }
+  color: #fff;
+  font: 1rem Verdana, Arial, sans-serif;
+  width:100%;
+  height:100%;
+ }
 
 h1 {
-  font-size: 2rem; }
+  font-size: 2rem; 
+  text-align:center;
+}
+
+  a {
+    font-size: 1rem;
+    color:#fff;
+
+}  
+
+section.card{
+  display: block;
+  padding: 40px;
+  max-width: 300px;
+  background-color:rgb(182, 123, 123);
+  width: 20%;
+  float: left;
+  margin-bottom:3rem;
+}
+
+form {
+  margin-top:2rem;
+}
+
+form label {
+  text-align: center;
+  display:block
+}
+
+form input {
+  width: 100%;
+  border: none;
+  margin-top:1rem;
+  font-size: 1rem;
+  padding:0.5rem;
+  border-radius: 1rem;
+}
+
+form input:focus {
+  outline:none;
+}
+
+.addstyle{
+  border-radius:10%;
+}
+
+a.btn{
+  width: 4rem;
+  background-color: rgb(58, 158, 58);
+  margin-top: 3rem;
+  padding: 0.5rem;
+  text-align:center;
+  border-radius:12px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(22, 60, 22);
+  margin-left:auto;
+  margin-right:auto;
+  display:block
+}
+
+section.boxes{
+  clear:both;
+  display:flex;
+}
+section div{
+  background-color:aqua;
+  width: 10rem;
+  margin-right: 5rem;
+  height:10rem;
+}
+section div:last-child {
+  margin-right:0;
+}

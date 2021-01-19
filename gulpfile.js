@@ -16,6 +16,7 @@ function watch() {
         }
     });
     gulp.watch('src/scss/**/*.scss', style).on('change', browserSync.reload); // watch changes to scss, if any go to style task and convert to css
+    gulp.watch('src/css/style.css').on('change', browserSync.reload);
     gulp.watch("src/index.html").on('change',browserSync.reload);
     gulp.watch('src/js/script.js').on('change', browserSync.reload);
     gulp.watch('src/js/utils.js').on('change', browserSync.reload);
