@@ -12,12 +12,14 @@ function watch() {
     browserSync.init({
         server: {
            baseDir: "./src",
-           index: "/index.html" // comment
+           index: "/index.html" 
         }
     });
     gulp.watch('src/scss/**/*.scss', style).on('change', browserSync.reload); // watch changes to scss, if any go to style task and convert to css
-    gulp.watch('./*.html').on('change',browserSync.reload);
-    gulp.watch('./js/**/*.js').on('change', browserSync.reload);
+    gulp.watch('src/css/style.css').on('change', browserSync.reload);
+    gulp.watch("src/index.html").on('change',browserSync.reload);
+    gulp.watch('src/js/script.js').on('change', browserSync.reload);
+    gulp.watch('src/js/utils.js').on('change', browserSync.reload);
 }
 exports.style = style;
 exports.watch = watch;
