@@ -1,4 +1,7 @@
+<<<<<<< HEAD
   
+=======
+>>>>>>> e54a6979c174bde713bb33ffdb28e87ad08ff56e
 function showMessage (message) {
     document.getElementById('messageid').textContent = message;
     }
@@ -10,6 +13,7 @@ function showMessage (message) {
         card.classList.toggle('addstyle');
     });
 
+<<<<<<< HEAD
 
     let boxes = document.querySelectorAll("section.boxes div");
     let buttonTwo = document.querySelector("a.btn.two");
@@ -28,3 +32,15 @@ function showMessage (message) {
         }
         currentColArray = [];
     });
+=======
+    let boxes = document.querySelectorAll("section div");
+
+    let buttonTwo = document.querySelector("a.btn.two");
+    buttonTwo.addEventListener("click", function(){
+        console.log(boxes);
+        for(let i = 0; 1<boxes.length;i++){
+            boxes[i].style.backgroundColor = "#fa4";
+        }
+    });
+    
+>>>>>>> e54a6979c174bde713bb33ffdb28e87ad08ff56e
